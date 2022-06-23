@@ -1,40 +1,66 @@
 body {
-   background-image: url(Images/ZomboidMenu.png); 
-   background-size: cover;
-   background-repeat: no-repeat; 
-   background-position: center top; 
-   position: relative;
-   overflow-x: hidden; 
-   overflow-y: hidden; 
-  }
+  background-image: url(Images/ZomboidMenu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 1440px;
+  height: 864px;
+}
 
-  img.Table {
-    position: relative;
-    display: block;
-    margin: auto;
-    padding-top: 2%;
-    z-index: 1;
-  }
+.container-size {
+  width: 1440px;
+  height: 864px;
+}
 
-  .list {
-    position: absolute;
-    margin: auto;
-    z-index: 2;
-    overflow-y:scroll;
-  }
+.list {
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  overflow-y: auto;
+  border: red solid 1px;
+}
 
-  table {
-    border-bottom: 1px solid #343434;
-    border-top:  1px solid #343434;
-    border-collapse: separate;
-    margin-bottom: 1px;
-  }
-  
-  table:hover {
-    background-color:   #0b0b0b;
-  }
+.list>div {
+  position: relative;
+  border: #343434 solid 1px;
+  margin-bottom: 1px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
 
-  input {
-    background: transparent;
-    border: none;
-  }
+.list img {
+  padding-right: 5px;
+}
+
+#occupations.list>div {
+  height: 67px;
+}
+
+.list>div:hover {
+  background-color: #0b0b0b;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  z-index: 1;
+}
+
+.active {
+  background-color: #351b0c;
+}
+
+.white-text {
+  color: #d3d3d3;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: DarkRed;
+}
